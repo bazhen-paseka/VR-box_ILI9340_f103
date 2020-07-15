@@ -26,8 +26,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
-	#include <string.h>
-	#include <stdio.h>
+	#include "vr-box_ili93_f103_sm.h"
 
 /* USER CODE END Includes */
 
@@ -49,7 +48,6 @@
 
 /* USER CODE BEGIN PV */
 
-	uint32_t pointer_u32 = 0 ;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -93,8 +91,8 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
-#define	DEBUG_STRING_SIZE		300
-  char DebugStr[DEBUG_STRING_SIZE];
+
+  	  VRbox_Init() ;
 
   /* USER CODE END 2 */
 
@@ -102,10 +100,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		sprintf(DebugStr," ptr %04u\r\n", (int)pointer_u32++) ;
-		HAL_UART_Transmit(&huart2, (uint8_t *)DebugStr, strlen(DebugStr), 100) ;
-		HAL_Delay(1000) ;
-    /* USER CODE END WHILE */
+	  VRbox_Main() ;
+
+	  /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
   }

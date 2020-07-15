@@ -1,0 +1,6 @@
+[submodule "Drivers/VR-box_ILI93_f103_sm"]
+	path = Drivers/VR-box_ILI93_f103_sm
+	url = https://github.com/bazhen-paseka/VR-box_ILI93_f103_sm.git
+[submodule "Drivers/display_ILI-93xx_sm"]
+	path = Drivers/display_ILI-93xx_sm
+	url = https://github.com/bazhen-paseka/display_ILI-93xx_sm.git
