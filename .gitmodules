@@ -7,3 +7,6 @@
 [submodule "Drivers/flash_stm32f103_hal_sm"]
 	path = Drivers/flash_stm32f103_hal_sm
 	url = https://github.com/bazhen-paseka/flash_stm32f103_hal_sm.git
+[submodule "Drivers/ringbuffer_dma_sm"]
+	path = Drivers/ringbuffer_dma_sm
+	url = https://github.com/bazhen-paseka/ringbuffer_dma_sm.git

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE targetDefinitions [ 
-	<!ELEMENT targetDefinitions (board)>
-	<!ELEMENT board (name, dbgIF+, dbgDEV, mcuId)>
-	<!ELEMENT name (#PCDATA)>
-	<!ELEMENT dbgIF (#PCDATA)>
-	<!ELEMENT dbgDEV (#PCDATA)>
-	<!ELEMENT mcuId (#PCDATA)>
-	<!ATTLIST board id CDATA #REQUIRED>
+<!DOCTYPE targetDefinitions [
+<!ELEMENT targetDefinitions (board)>
+<!ELEMENT board (name,dbgIF+,dbgDEV,mcuId)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT dbgIF (#PCDATA)>
+<!ELEMENT dbgDEV (#PCDATA)>
+<!ELEMENT mcuId (#PCDATA)>
+<!ATTLIST board id CDATA #REQUIRED>
 ]>
-
 <targetDefinitions>
-  <board id="vr-box_ili9340_f103">
+  <board id="VR-box_ILI9340_f103">
     <name>VR-box_ILI9340_f103</name>
     <dbgIF>SWD</dbgIF>
     <dbgDEV>ST-Link</dbgDEV>
