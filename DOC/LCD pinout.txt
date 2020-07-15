@@ -1,0 +1,17 @@
+
+RST	->	b1
+CS	->	b0
+RS	->	a4
+WR	->	a1
+RD	->	a0
+
+BIT2	->	a10
+BIT3	->	b3
+BIT4	->	b5
+BIT5	->	b4
+BIT6	->	b10
+BIT7	->	a8
+
+BIT0	->	a9
+BIT1	->	a7
+
